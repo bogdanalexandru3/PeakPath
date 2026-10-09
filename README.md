@@ -21,6 +21,19 @@ Proiectul conține exclusiv fișiere statice (HTML și CSS). Pentru a rula aplic
 - [x] Stage 2: Data logic in JavaScript
 - [ ] Stage 3: Vite and React project
 
+## Tabel de verificare - Etapa 1
+
+| ID | Requirement | Where (permalink) | How to check |
+| --- | --- | --- | --- |
+| S1-R1 | README: description, fields, sample data, how to run | [README.md](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/README.md#L1-L19) | Read the README and confirm the description, data model, sample entries, and run instructions are present. |
+| S1-R2 | AI usage section | [README.md](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/README.md#L39-L40) | Read the AI usage section in the README. |
+| S1-R3 | AI log for stage 1 | [ai-log/etapa-01.md](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/ai-log/etapa-01.md#L1-L14) | Open the AI log file and confirm it contains the Stage 1 AI usage notes. |
+| S1-R4 | Header, form (text + select), 3 cards with own data | [index.html](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/index.html#L9-L94) | Open the page and verify the title, form fields, and three travel cards are visible. |
+| S1-R5 | Finished card looks different | [style.css](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/style.css#L40-L70), [style.css](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/style.css#L155-L170) | Inspect the completed card styles and confirm it is visually marked as completed. |
+| S1-R6 | 2 columns on desktop, 1 under 700px | [style.css](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/style.css#L96-L104), [style.css](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/style.css#L197-L202) | Resize below 700px and confirm the layout switches to one column. |
+| S1-R7 | Visible focus, readable dark theme | [style.css](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/style.css#L15-L25), [style.css](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/style.css#L127-L147) | Navigate with Tab and check the focus ring, then inspect the dark mode colors. |
+| S1-R8 | Commit “Stage 1” pushed link to the commit | [GitHub commit history](https://github.com/bogdanalexandru3/PeakPath/commits/main) | Confirm the latest pushed commit message is Stage 1 and matches the project history. |
+
 ## Etapa 2: Data logic
 Am extras datele din HTML și le-am integrat într-un array de obiecte în fișierul `trasee.js`. Toate funcțiile de manipulare (adăugare, listare, comutare) sunt implementate respectând imutabilitatea, evitând modificarea la nivelul DOM-ului. Ieșirea este printată exclusiv în consolă.
 
