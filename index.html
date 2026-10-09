@@ -1,12 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PeakPath - Jurnal Trasee</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>PeakPath ⛰️</h1>
+        <p>Jurnalul tău de trasee montane</p>
+    </header>
+
+    <main>
+        <!-- Secțiunea formularului -->
+        <section class="form-section">
+            <h2>Adaugă un traseu nou</h2>
+            <form action="#" method="get">
+                <div class="input-group">
+                    <label for="nume-traseu">Nume traseu (Text)</label>
+                    <input type="text" id="nume-traseu" name="nume-traseu" placeholder="Ex: Vârful Omu" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="masiv">Masiv montan (Categorie)</label>
+                    <select id="masiv" name="masiv">
+                        <option value="Bucegi">Bucegi</option>
+                        <option value="Făgăraș">Făgăraș</option>
+                        <option value="Piatra Craiului">Piatra Craiului</option>
+                        <option value="Retezat">Retezat</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="dificultate">Dificultate (Etichetă)</label>
+                    <select id="dificultate" name="dificultate">
+                        <option value="Ușor">Ușor</option>
+                        <option value="Mediu">Mediu</option>
+                        <option value="Dificil">Dificil</option>
+                    </select>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="stare" name="stare">
+                    <label for="stare">Am parcurs deja acest traseu (Stare Da/Nu)</label>
+                </div>
+
+                <button type="submit">Salvează Traseul</button>
+            </form>
+        </section>
+
+        <!-- Secțiunea listei de carduri -->
+        <section class="trails-list">
+            <h2>Traseele Mele</h2>
+            <div class="cards-container">
+            <p class="empty">Nu există trasee adăugate încă. Folosește formularul pentru a adăuga unul.</p>
     
+                
+                <!-- Card 1: Traseu Parcurs -->
+                <article class="card completed">
+                    <div class="card-header">
+                        <h3>Creasta Pietrei Craiului</h3>
+                        <span class="badge badge-dificil">Dificil</span>
+                    </div>
+                    <p class="categorie">Masiv: Piatra Craiului</p>
+                    <p class="stare-text">Stare: Parcurs ✅</p>
+                </article>
+
+                <!-- Card 2: Traseu Planificat -->
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Cabana Mălăiești</h3>
+                        <span class="badge badge-usor">Ușor</span>
+                    </div>
+                    <p class="categorie">Masiv: Bucegi</p>
+                    <p class="stare-text">Stare: Planificat ⏳</p>
+                </article>
+
+                <!-- Card 3: Traseu Planificat -->
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Vârful Moldoveanu</h3>
+                        <span class="badge badge-mediu">Mediu</span>
+                    </div>
+                    <p class="categorie">Masiv: Făgăraș</p>
+                    <p class="stare-text">Stare: Planificat ⏳</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
 </body>
 </html>
