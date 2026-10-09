@@ -24,5 +24,17 @@ Proiectul conține exclusiv fișiere statice (HTML și CSS). Pentru a rula aplic
 ## Etapa 2: Data logic
 Am extras datele din HTML și le-am integrat într-un array de obiecte în fișierul `trasee.js`. Toate funcțiile de manipulare (adăugare, listare, comutare) sunt implementate respectând imutabilitatea, evitând modificarea la nivelul DOM-ului. Ieșirea este printată exclusiv în consolă.
 
+## Tabel de verificare - Etapa 2
+
+| ID | Requirement | Where (permalink) | How to check |
+| --- | --- | --- | --- |
+| S2-R1 | JS file linked, logs on page load | [index.html script](https://github.com/bogdanalexandru3/PeakPath/blob/main/index.html#L92-L95), [trasee.js console output](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L75-L96) | Open the page, press F12, and confirm console output appears on load. |
+| S2-R2 | 3+ items with id, name, state, tag | [trasee.js data set](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L1-L8) | Read the array structure and confirm 3 objects exist with the required fields. |
+| S2-R3 | list, count, search, add, toggle, delete | [trasee.js logic](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L12-L73) | Read the functions and check the console output from the demo flow. |
+| S2-R4 | add rejects empty name and invalid tag | [trasee.js validation](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L34-L60), [validation log](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L94-L96) | Verify the last two console lines show rejected input for empty title and invalid difficulty. |
+| S2-R5 | original array unchanged after add | [trasee.js immutability check](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L82-L85) | Inspect the console output showing original length remains unchanged. |
+| S2-R6 | README Stage 2 section + AI log | [README.md Stage 2](https://github.com/bogdanalexandru3/PeakPath/blob/main/README.md#L19-L35), [ai-log/etapa02.md](https://github.com/bogdanalexandru3/PeakPath/blob/main/ai-log/etapa02.md) | Read the documentation and the AI usage log. |
+| S2-R7 | commit “Stage 2” pushed link to the commit | [GitHub commit history](https://github.com/bogdanalexandru3/PeakPath/commits/main) | Confirm the latest pushed commit message is Stage 2 and matches the repository history. |
+
 ## AI usage
-Acest proiect a utilizat asistență AI (Gemini). Log-urile conversațiilor se regăsesc în fișierul `ai-log/etapa-01.md`.
+Acest proiect a utilizat asistență AI (Gemini). Log-urile conversațiilor se regăsesc în fișierul `ai-log/etapa02.md`.
