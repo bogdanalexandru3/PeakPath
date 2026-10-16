@@ -3,9 +3,9 @@
 ## Context
 Acest fișier documentează utilizarea asistenței AI pentru inițializarea proiectului React cu Vite.
 
-## Interacțiune
-- Prompt: „trebuie sa rezolvi etapa 3 exact cum cere fara sa adaugi tu alte nebuneli”
-- Răspuns folosit: mutarea fișierelor etapelor anterioare în `mockup/`, crearea proiectului React în `frontend/`, reutilizarea stilurilor, transferarea datelor din Etapa 2 în `App.jsx` și afișarea contorului calculat și a datelor ca JSON.
+## Ajutor oferit
+- Am primit ajutor la mutarea fișierelor din etapele anterioare în folderul `mockup/`.
+- Am primit ajutor la calcularea și afișarea în `App.jsx` a numărului de trasee planificate, folosind datele existente.
 
 ## Verificare
 - `npm install` a instalat dependențele proiectului.
