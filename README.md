@@ -69,5 +69,27 @@ npm run dev
 Then open the address printed in the terminal (usually `http://localhost:5173`).
 
 ## AI usage
+## Tabel de verificare - Etapa 3
+
+| ID | Requirement | Where (permalink) | How to check |
+| --- | --- | --- | --- |
+| S3-R1 | npm run dev starts without errors | [frontend/package.json](https://github.com/bogdanalexandru3/PeakPath/blob/8bf76f8e4c5636de51e3e6c1370e6f9aff00a4cc/frontend/package.json) | npm install, npm run dev |
+| S3-R2 | app name and counter computed from data | [frontend/src/App.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/8bf76f8e4c5636de51e3e6c1370e6f9aff00a4cc/frontend/src/App.jsx#L25-L35) | edit data, save |
+| S3-R3 | data from README, not from the example | [frontend/src/App.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/8bf76f8e4c5636de51e3e6c1370e6f9aff00a4cc/frontend/src/App.jsx#L1-L23) | compare with README |
+| S3-R4 | stage 1 styles reused | [frontend/src/App.css](https://github.com/bogdanalexandru3/PeakPath/blob/8bf76f8e4c5636de51e3e6c1370e6f9aff00a4cc/frontend/src/App.css) | look at the page |
+| S3-R5 | node_modules ignored, build passes | [frontend/.gitignore](https://github.com/bogdanalexandru3/PeakPath/blob/8bf76f8e4c5636de51e3e6c1370e6f9aff00a4cc/frontend/.gitignore) | npm run build |
+| S3-R6 | README Stage 3 section + AI log | [README.md](https://github.com/bogdanalexandru3/PeakPath/blob/8bf76f8e4c5636de51e3e6c1370e6f9aff00a4cc/README.md), [ai-log/etapa-03.md](https://github.com/bogdanalexandru3/PeakPath/blob/8bf76f8e4c5636de51e3e6c1370e6f9aff00a4cc/ai-log/etapa-03.md) | read |
+| S3-R7 | commit “Stage 3” pushed | [Stage 3 commit](https://github.com/bogdanalexandru3/PeakPath/commit/8bf76f8e4c5636de51e3e6c1370e6f9aff00a4cc) | confirm the Stage 3 commit is published |
+
+## Lista de verificare - Etapa 3
+- [x] S3-R1 `npm run dev` pornește fără erori.
+- [x] S3-R2 Pagina afișează numele aplicației și contorul calculat din date.
+- [x] S3-R3 Datele sunt cele din README, nu cele din exemplu.
+- [x] S3-R4 Stilurile din Etapa 1 se regăsesc în aplicație.
+- [x] S3-R5 `node_modules/` nu apare pe GitHub, iar `npm run build` rulează fără erori.
+- [x] S3-R6 README-ul este actualizat, iar jurnalul AI este completat.
+- [x] S3-R7 Commit-ul Stage 3 este publicat pe GitHub.
+
+## AI usage
 Acest proiect a utilizat asistență AI (Gemini). Log-urile conversațiilor se regăsesc în fișierul `ai-log/etapa02.md`.
 Pentru Etapa 3, jurnalul este în `ai-log/etapa-03.md`.
