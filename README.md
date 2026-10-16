@@ -3,7 +3,15 @@
 PeakPath este o aplicație web care funcționează ca un jurnal de drumeții, permițând utilizatorilor să își țină evidența traseelor montane.
 
 ## Modul de rulare
-Proiectul conține exclusiv fișiere statice (HTML și CSS). Pentru a rula aplicația, deschideți fișierul `index.html` în orice browser modern sau utilizați extensia Live Server din Visual Studio Code.
+Aplicația rulează cu Vite din folderul `frontend/`:
+
+```sh
+cd frontend
+npm install
+npm run dev
+```
+
+Deschideți adresa afișată în terminal, de obicei `http://localhost:5173`.
 
 ## Modelul de Date
 * **Nume:** Numele traseului (Text)
@@ -19,7 +27,7 @@ Proiectul conține exclusiv fișiere statice (HTML și CSS). Pentru a rula aplic
 ## Stadiul Proiectului (Status)
 - [x] Stage 1: Static mockup HTML & CSS
 - [x] Stage 2: Data logic in JavaScript
-- [ ] Stage 3: Vite and React project
+- [x] Stage 3: Vite and React project
 
 ## Tabel de verificare - Etapa 1
 
@@ -49,5 +57,17 @@ Am extras datele din HTML și le-am integrat într-un array de obiecte în fiși
 | S2-R6 | README Stage 2 section + AI log | [README.md Stage 2](https://github.com/bogdanalexandru3/PeakPath/blob/main/README.md#L19-L35), [ai-log/etapa02.md](https://github.com/bogdanalexandru3/PeakPath/blob/main/ai-log/etapa02.md) | Read the documentation and the AI usage log. |
 | S2-R7 | commit “Stage 2” pushed link to the commit | [GitHub commit history](https://github.com/bogdanalexandru3/PeakPath/commits/main) | Confirm the latest pushed commit message is Stage 2 and matches the repository history. |
 
+## Stage 3: Vite and React project
+The app now lives in `frontend/`, built with Vite. The data from stage 2 moved into the main component; the list is still printed raw.
+
+## How to run
+```sh
+cd frontend
+npm install
+npm run dev
+```
+Then open the address printed in the terminal (usually `http://localhost:5173`).
+
 ## AI usage
 Acest proiect a utilizat asistență AI (Gemini). Log-urile conversațiilor se regăsesc în fișierul `ai-log/etapa02.md`.
+Pentru Etapa 3, jurnalul este în `ai-log/etapa-03.md`.
