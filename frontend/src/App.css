@@ -63,7 +63,7 @@ button {
 .badge-dificil { background-color: var(--badge-dificil); }
 
 .empty {
-    display: none;
+    display: block;
     text-align: center;
     font-style: italic;
     opacity: 0.7;
@@ -175,6 +175,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    list-style: none;
 }
 
 .card-header {

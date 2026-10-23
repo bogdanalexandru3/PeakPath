@@ -28,6 +28,8 @@ Deschideți adresa afișată în terminal, de obicei `http://localhost:5173`.
 - [x] Stage 1: Static mockup HTML & CSS
 - [x] Stage 2: Data logic in JavaScript
 - [x] Stage 3: Vite and React project
+- [x] Stage 4: React components rendered from data
+- [ ] Stage 5: Local state and events
 
 ## Tabel de verificare - Etapa 1
 
@@ -93,3 +95,10 @@ Then open the address printed in the terminal (usually `http://localhost:5173`).
 ## AI usage
 Acest proiect a utilizat asistență AI (Gemini). Log-urile conversațiilor se regăsesc în fișierul `ai-log/etapa02.md`.
 Pentru Etapa 3, jurnalul este în `ai-log/etapa-03.md`.
+
+## Etapa 4: Componente construite din date
+Lista traseelor este randată din array prin două componente React:
+- `TraseeList` primește toate traseele prin props și generează lista.
+- `TraseuCard` primește un singur traseu prin props și afișează datele și starea acestuia.
+
+Jurnalul AI pentru Etapa 4 este în `ai-log/etapa-04.md`.

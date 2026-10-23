@@ -1,3 +1,5 @@
+import TraseeList from "./components/TraseeList.jsx";
+
 const trasee = [
   {
     id: 1,
@@ -37,7 +39,7 @@ export default function App() {
       <main className="container">
         <section className="panel trails-list">
           <h2>Traseele mele</h2>
-          <pre>{JSON.stringify(trasee, null, 2)}</pre>
+          <TraseeList trasee={trasee} />
         </section>
       </main>
     </>
