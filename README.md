@@ -102,3 +102,15 @@ Lista traseelor este randată din array prin două componente React:
 - `TraseuCard` primește un singur traseu prin props și afișează datele și starea acestuia.
 
 Jurnalul AI pentru Etapa 4 este în `ai-log/etapa-04.md`.
+
+## Tabel de verificare - Etapa 4
+
+| ID | Cerință | Unde | Cum se verifică |
+| --- | --- | --- | --- |
+| S4-R1 | Cel puțin două componente, fiecare în fișier propriu | `frontend/src/components/` | Deschideți folderul și verificați cele două fișiere JSX. |
+| S4-R2 | Cardul primește datele prin props | `frontend/src/components/TraseuCard.jsx` | Verificați prop-ul `traseu`; componenta nu accesează array-ul. |
+| S4-R3 | Lista folosește `map` și `key={traseu.id}` | `frontend/src/components/TraseeList.jsx` | Deschideți aplicația și verificați consola browserului. |
+| S4-R4 | Lista goală afișează un mesaj | `frontend/src/components/TraseeList.jsx` | Înlocuiți temporar array-ul cu `[]`. |
+| S4-R5 | Starea traseului schimbă aspectul cardului | `frontend/src/components/TraseuCard.jsx` | Modificați temporar `parcurs` pentru un traseu. |
+| S4-R6 | README și jurnal AI actualizate | `README.md`, `ai-log/etapa-04.md` | Citiți secțiunea și jurnalul Etapei 4. |
+| S4-R7 | Commit-ul Stage 4 este publicat pe GitHub | Istoricul GitHub | Verificați commit-ul „Stage 4: components rendered from data”. |
