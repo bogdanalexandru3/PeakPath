@@ -1,4 +1,6 @@
-# PeakPath - Etapa 1
+# PeakPath
+
+##- Etapa 1
 
 PeakPath este o aplicație web care funcționează ca un jurnal de drumeții, permițând utilizatorilor să își țină evidența traseelor montane.
 
@@ -59,7 +61,7 @@ Am extras datele din HTML și le-am integrat într-un array de obiecte în fiși
 | S2-R6 | README Stage 2 section + AI log | [README.md Stage 2](https://github.com/bogdanalexandru3/PeakPath/blob/main/README.md#L19-L35), [ai-log/etapa02.md](https://github.com/bogdanalexandru3/PeakPath/blob/main/ai-log/etapa02.md) | Read the documentation and the AI usage log. |
 | S2-R7 | commit “Stage 2” pushed link to the commit | [GitHub commit history](https://github.com/bogdanalexandru3/PeakPath/commits/main) | Confirm the latest pushed commit message is Stage 2 and matches the repository history. |
 
-## Stage 3: Vite and React project
+## Etapa 3: Vite and React project
 The app now lives in `frontend/`, built with Vite. The data from stage 2 moved into the main component; the list is still printed raw.
 
 ## How to run

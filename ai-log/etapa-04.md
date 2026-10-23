@@ -1,13 +1,10 @@
 # Jurnal AI - Etapa 4
 
 ## Context
-Acest fișier documentează asistența AI folosită la transformarea listei JSON din Etapa 3 într-o listă de carduri React generate din date.
+Am folosit asistența AI pentru a simplifica cerințele Etapei 4 și a le corela cu structura și datele deja existente din Etapa 3.
 
 ## Ajutor oferit
-- Am analizat cerințele din ghidul Etapei 4 și structura proiectului realizată în Etapa 3.
-- Am separat afișarea unui traseu în componenta `TraseuCard` și randarea listei în `TraseeList`.
-- Am conectat componentele prin props, am folosit `map` cu `key` bazat pe ID și am adăugat mesajul pentru lista goală.
-- Am păstrat datele existente și contorul din Etapa 3, iar starea `parcurs` controlează stilul și textul cardului.
+- AI-ul a ajutat la clarificarea modului în care cerințele Etapei 4 se aplică proiectului PeakPath și componentelor create în Etapa 3.
 
 ## Verificare
 - `npm run lint` a finalizat fără erori.

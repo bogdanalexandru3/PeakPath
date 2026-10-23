@@ -2,7 +2,7 @@ import TraseuCard from "./TraseuCard.jsx";
 
 export default function TraseeList({ trasee }) {
   if (trasee.length === 0) {
-    return <p className="empty">Nu există trasee adăugate încă.</p>;
+    return <p className="empty">Nu exista trasee adaugate încă.</p>;
   }
 
   return (

@@ -70,7 +70,7 @@ button {
     padding: 2rem;
 }
 
-/* Reset și stiluri de bază */
+/* Reset si stiluri de bază */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -93,7 +93,7 @@ header {
     margin-bottom: 2rem;
 }
 
-/* Layout principal: o singură coloană în Etapa 3 */
+/* Layout principal: o singura coloana în Etapa 3 */
 .container {
     max-width: 1000px;
     margin: 24px auto;
@@ -185,7 +185,7 @@ button:hover {
     margin-bottom: 0.5rem;
 }
 
-/* Stilizarea cardului 'Parcurs' (elementul tăiat/estompat) */
+/* Stilizarea cardului 'Parcurs' (elementul taiat/estompat) */
 .card.completed h3 {
     text-decoration: line-through;
     opacity: 0.6;
@@ -200,7 +200,7 @@ button:hover {
 .badge-mediu { background-color: #f39c12; }
 .badge-dificil { background-color: #e74c3c; }
 
-/* Regulă Media pentru ecrane sub 700px */
+/* Regula Media pentru ecrane sub 700px */
 @media (max-width: 700px) {
     .container {
         grid-template-columns: 1fr;

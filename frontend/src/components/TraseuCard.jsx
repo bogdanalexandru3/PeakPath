@@ -1,7 +1,7 @@
 const ETICHETE_DIFICULTATE = {
-  "Ușor": { text: "Ușor", className: "usor" },
-  Mediu: { text: "Mediu", className: "mediu" },
-  Dificil: { text: "Dificil", className: "dificil" },
+  "ușor": { text: "ușor", className: "usor" },
+  "mediu": { text: "mediu", className: "mediu" },
+  "dificil": { text: "dificil", className: "dificil" },
 };
 
 export default function TraseuCard({ traseu }) {
