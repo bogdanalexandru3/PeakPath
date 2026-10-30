@@ -31,7 +31,8 @@ Deschideți adresa afișată în terminal, de obicei `http://localhost:5173`.
 - [x] Stage 2: Data logic in JavaScript
 - [x] Stage 3: Vite and React project
 - [x] Stage 4: React components rendered from data
-- [ ] Stage 5: Local state and events
+- [x] Stage 5: Local state and events
+- [ ] Stage 6: Loading data from a mock API
 
 ## Tabel de verificare - Etapa 1
 
@@ -46,19 +47,19 @@ Deschideți adresa afișată în terminal, de obicei `http://localhost:5173`.
 | S1-R7 | Visible focus, readable dark theme | [style.css](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/style.css#L15-L25), [style.css](https://github.com/bogdanalexandru3/PeakPath/blob/f465531/style.css#L127-L147) | Navigate with Tab and check the focus ring, then inspect the dark mode colors. |
 | S1-R8 | Commit “Stage 1” pushed link to the commit | [GitHub commit history](https://github.com/bogdanalexandru3/PeakPath/commits/main) | Confirm the latest pushed commit message is Stage 1 and matches the project history. |
 
-## Etapa 2: Data logic
-Am extras datele din HTML și le-am integrat într-un array de obiecte în fișierul `trasee.js`. Toate funcțiile de manipulare (adăugare, listare, comutare) sunt implementate respectând imutabilitatea, evitând modificarea la nivelul DOM-ului. Ieșirea este printată exclusiv în consolă.
+## Stage 2: data logic
+Plain JavaScript, no DOM. `mockup/trasee.js` holds the trail array and the functions that read and change it. Results are printed in the browser console (F12).
 
 ## Tabel de verificare - Etapa 2
 
 | ID | Requirement | Where (permalink) | How to check |
 | --- | --- | --- | --- |
-| S2-R1 | JS file linked, logs on page load | [index.html script](https://github.com/bogdanalexandru3/PeakPath/blob/main/index.html#L92-L95), [trasee.js console output](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L75-L96) | Open the page, press F12, and confirm console output appears on load. |
-| S2-R2 | 3+ items with id, name, state, tag | [trasee.js data set](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L1-L8) | Read the array structure and confirm 3 objects exist with the required fields. |
-| S2-R3 | list, count, search, add, toggle, delete | [trasee.js logic](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L12-L73) | Read the functions and check the console output from the demo flow. |
-| S2-R4 | add rejects empty name and invalid tag | [trasee.js validation](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L34-L60), [validation log](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L94-L96) | Verify the last two console lines show rejected input for empty title and invalid difficulty. |
-| S2-R5 | original array unchanged after add | [trasee.js immutability check](https://github.com/bogdanalexandru3/PeakPath/blob/main/trasee.js#L82-L85) | Inspect the console output showing original length remains unchanged. |
-| S2-R6 | README Stage 2 section + AI log | [README.md Stage 2](https://github.com/bogdanalexandru3/PeakPath/blob/main/README.md#L19-L35), [ai-log/etapa02.md](https://github.com/bogdanalexandru3/PeakPath/blob/main/ai-log/etapa02.md) | Read the documentation and the AI usage log. |
+| S2-R1 | JS file linked, logs on page load | [mockup/index.html script](https://github.com/bogdanalexandru3/PeakPath/blob/main/mockup/index.html#L93), [console output](https://github.com/bogdanalexandru3/PeakPath/blob/main/mockup/trasee.js#L74-L100) | Open the mockup page, press F12, and confirm console output appears on load. |
+| S2-R2 | 3+ items with id, name, state, tag | [mockup/trasee.js data set](https://github.com/bogdanalexandru3/PeakPath/blob/main/mockup/trasee.js#L4-L8) | Read the array structure and confirm three trails have the required fields. |
+| S2-R3 | list, count, search, add, toggle, delete | [mockup/trasee.js functions](https://github.com/bogdanalexandru3/PeakPath/blob/main/mockup/trasee.js#L13-L72) | Read the functions and check the console output from the demo flow. |
+| S2-R4 | add rejects empty name and invalid tag | [mockup/trasee.js validation](https://github.com/bogdanalexandru3/PeakPath/blob/main/mockup/trasee.js#L35-L48), [validation calls](https://github.com/bogdanalexandru3/PeakPath/blob/main/mockup/trasee.js#L95-L96) | Verify the last two console lines show rejected input for empty title and invalid difficulty. |
+| S2-R5 | original array unchanged after add | [mockup/trasee.js immutability check](https://github.com/bogdanalexandru3/PeakPath/blob/main/mockup/trasee.js#L85) | Inspect the console output showing original length remains unchanged. |
+| S2-R6 | README Stage 2 section + AI log | [README.md Stage 2 section](https://github.com/bogdanalexandru3/PeakPath/blob/main/README.md#stage-2-data-logic), [ai-log/etapa-02.md](https://github.com/bogdanalexandru3/PeakPath/blob/main/ai-log/etapa-02.md) | Read the Stage 2 section and AI log. |
 | S2-R7 | commit “Stage 2” pushed link to the commit | [GitHub commit history](https://github.com/bogdanalexandru3/PeakPath/commits/main) | Confirm the latest pushed commit message is Stage 2 and matches the repository history. |
 
 ## Etapa 3: Vite and React project
@@ -95,7 +96,7 @@ Then open the address printed in the terminal (usually `http://localhost:5173`).
 - [x] S3-R7 Commit-ul Stage 3 este publicat pe GitHub.
 
 ## AI usage
-Acest proiect a utilizat asistență AI (Gemini). Log-urile conversațiilor se regăsesc în fișierul `ai-log/etapa02.md`.
+Acest proiect a utilizat asistență AI (Gemini). Log-urile conversațiilor se regăsesc în fișierul `ai-log/etapa-02.md`.
 Pentru Etapa 3, jurnalul este în `ai-log/etapa-03.md`.
 
 ## Etapa 4: Componente construite din date
@@ -116,3 +117,21 @@ Jurnalul AI pentru Etapa 4 este în `ai-log/etapa-04.md`.
 | S4-R5 | Starea traseului schimbă aspectul cardului | `frontend/src/components/TraseuCard.jsx` | Modificați temporar `parcurs` pentru un traseu. |
 | S4-R6 | README și jurnal AI actualizate | `README.md`, `ai-log/etapa-04.md` | Citiți secțiunea și jurnalul Etapei 4. |
 | S4-R7 | Commit-ul Stage 4 este publicat pe GitHub | Istoricul GitHub | Verificați commit-ul „Stage 4: components rendered from data”. |
+
+## Stage 5: local state and events
+The list lives in React state. Checking and deleting work from the page, and the counters in the header follow automatically. A button in the header switches between light and dark mode. Changes are lost on refresh, which is what stage 6 and stage 10 fix.
+
+Jurnalul AI pentru Etapa 5 este în `ai-log/etapa-05.md`.
+
+## Tabel de verificare - Etapa 5
+
+| ID | Cerință | Unde | Cum se verifică |
+| --- | --- | --- | --- |
+| S5-R1 | List kept in `useState`, in `App` | [App.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/App.jsx#L35-L36) | Read the list state initialization. |
+| S5-R2 | Toggling changes state and card appearance | [App.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/App.jsx#L39-L47), [TraseuCard.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/components/TraseuCard.jsx#L14-L19) | Click a checkbox and check the card. |
+| S5-R3 | Delete removes the item | [App.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/App.jsx#L49-L51), [TraseuCard.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/components/TraseuCard.jsx#L27-L31) | Click Delete. |
+| S5-R4 | Header counter is derived, not stored in state | [App.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/App.jsx#L37) | Toggle or delete an item and watch the header. |
+| S5-R5 | State updates are immutable | [App.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/App.jsx#L39-L51) | Read the update functions. |
+| S5-R6 | Light/dark toggle sets state and `data-theme` on `<html>` | [App.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/App.jsx#L28-L33), [App.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/App.jsx#L53-L68), [App.css](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/App.css#L15-L41) | Click the theme button with both system themes. |
+| S5-R7 | No console warnings; README and AI log updated | [README.md Stage 5](https://github.com/bogdanalexandru3/PeakPath/blob/main/README.md#stage-5-local-state-and-events), [ai-log/etapa-05.md](https://github.com/bogdanalexandru3/PeakPath/blob/main/ai-log/etapa-05.md) | Open DevTools Console and read the documentation. |
+| S5-R8 | Stage 5 commit pushed | [GitHub commit history](https://github.com/bogdanalexandru3/PeakPath/commits/main) | Confirm the Stage 5 commit is published. |

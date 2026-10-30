@@ -1,4 +1,4 @@
-# AI Log - Etapa 2
+# AI Log - Stage 2
 
 ## Context
 Acest fișier documentează utilizarea asistenței AI în etapa de implementare a logicii JavaScript pentru PeakPath.
