@@ -147,3 +147,24 @@ npm run dev # terminal 2, http://localhost:5173
 ```
 
 Jurnalul AI pentru Etapa 6 este în `ai-log/etapa-06.md`.
+
+## Tabel de verificare - Etapa 6
+
+| ID | Cerință | Unde (permalink) | Cum se verifică |
+| --- | --- | --- | --- |
+| S6-R1 | npm run api pornește, iar ruta resursei afișează JSON în browser | [package.json#L11](https://github.com/bogdanalexandru3/PeakPath/blob/3ccd78cfed827d472cb224d607d6848c65fc43c7/frontend/package.json#L11), [db.json](https://github.com/bogdanalexandru3/PeakPath/blob/3ccd78cfed827d472cb224d607d6848c65fc43c7/frontend/db.json) | Deschide localhost:3001/trasee |
+| S6-R2 | Datele nu mai sunt scrise în codul React | [App.jsx#L12](https://github.com/bogdanalexandru3/PeakPath/blob/3ccd78cfed827d472cb224d607d6848c65fc43c7/frontend/src/App.jsx#L12) | Citire cod (`useState([])`) |
+| S6-R3 | La încărcare apare mesajul de așteptare | [App.jsx#L81](https://github.com/bogdanalexandru3/PeakPath/blob/3ccd78cfed827d472cb224d607d6848c65fc43c7/frontend/src/App.jsx#L81) | Rulare cu `--delay 4000` |
+| S6-R4 | Cu API-ul oprit apare mesajul de eroare, nu o pagină goală | [App.jsx#L82-L86](https://github.com/bogdanalexandru3/PeakPath/blob/3ccd78cfed827d472cb224d607d6848c65fc43c7/frontend/src/App.jsx#L82-L86) | Oprire `npm run api`, refresh |
+| S6-R5 | fetch apare doar în api.js, iar adresa API-ului se citește din variabila de mediu | [api.js#L2-L10](https://github.com/bogdanalexandru3/PeakPath/blob/3ccd78cfed827d472cb224d607d6848c65fc43c7/frontend/src/api.js#L2-L10), [.env.example](https://github.com/bogdanalexandru3/PeakPath/blob/3ccd78cfed827d472cb224d607d6848c65fc43c7/frontend/.env.example) | Căutare `fetch` în proiect |
+| S6-R6 | README-ul conține secțiunea etapei, iar ai-log/etapa-06.md este completat | [README.md](https://github.com/bogdanalexandru3/PeakPath/blob/3ccd78cfed827d472cb224d607d6848c65fc43c7/README.md#stage-6-data-from-a-mock-api), [ai-log/etapa-06.md](https://github.com/bogdanalexandru3/PeakPath/blob/3ccd78cfed827d472cb224d607d6848c65fc43c7/ai-log/etapa-06.md) | Citire fișiere |
+| S6-R7 | Commit-ul Stage 6: ... este publicat pe GitHub | [Commit Stage 6](https://github.com/bogdanalexandru3/PeakPath/commit/3ccd78cfed827d472cb224d607d6848c65fc43c7) | Istoric commit-uri pe GitHub |
+
+## Lista de verificare - Etapa 6
+- [x] S6-R1 npm run api pornește, iar ruta resursei afișează JSON în browser.
+- [x] S6-R2 Datele nu mai sunt scrise în codul React.
+- [x] S6-R3 La încărcare apare mesajul de așteptare.
+- [x] S6-R4 Cu API-ul oprit apare mesajul de eroare, nu o pagină goală.
+- [x] S6-R5 fetch apare doar în api.js, iar adresa API-ului se citește din variabila de mediu.
+- [x] S6-R6 README-ul conține secțiunea etapei, iar ai-log/etapa-06.md este completat.
+- [x] S6-R7 Commit-ul Stage 6 este publicat pe GitHub.
