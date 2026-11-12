@@ -10,6 +10,9 @@
     --badge-mediu: #b45309;
     --badge-dificil: #be123c;
     --text-white: #ffffff;
+    --muted: #4b6356;
+    --error-bg: #fdf2f8;
+    --error-border: #fbcfe8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +27,9 @@
         --badge-usor: #0f9f8f;
         --badge-mediu: #f59e0b;
         --badge-dificil: #fb7185;
+        --muted: #95b3a4;
+        --error-bg: #3b1d2e;
+        --error-border: #6b2a4a;
     }
 }
 
@@ -38,6 +44,9 @@
     --badge-usor: #0f9f8f;
     --badge-mediu: #f59e0b;
     --badge-dificil: #fb7185;
+    --muted: #95b3a4;
+    --error-bg: #3b1d2e;
+    --error-border: #6b2a4a;
 }
 
 button {
@@ -345,4 +354,17 @@ button:hover {
     .container {
         grid-template-columns: 1fr;
     }
+}
+
+/* Etapa 6: stări de încărcare și de eroare */
+.info {
+    color: var(--muted);
+}
+
+.error {
+    color: var(--badge-dificil);
+    background: var(--error-bg);
+    border: 1px solid var(--error-border);
+    border-radius: 8px;
+    padding: 10px 12px;
 }

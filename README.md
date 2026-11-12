@@ -32,7 +32,8 @@ Deschideți adresa afișată în terminal, de obicei `http://localhost:5173`.
 - [x] Stage 3: Vite and React project
 - [x] Stage 4: React components rendered from data
 - [x] Stage 5: Local state and events
-- [ ] Stage 6: Loading data from a mock API
+- [x] Stage 6: Loading data from a mock API
+- [ ] Stage 7: Form and validation
 
 ## Tabel de verificare - Etapa 1
 
@@ -135,3 +136,14 @@ Jurnalul AI pentru Etapa 5 este în `ai-log/etapa-05.md`.
 | S5-R6 | Light/dark toggle sets state and `data-theme` on `<html>` | [App.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/App.jsx#L28-L33), [App.jsx](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/App.jsx#L53-L68), [App.css](https://github.com/bogdanalexandru3/PeakPath/blob/main/frontend/src/App.css#L15-L41) | Click the theme button with both system themes. |
 | S5-R7 | No console warnings; README and AI log updated | [README.md Stage 5](https://github.com/bogdanalexandru3/PeakPath/blob/main/README.md#stage-5-local-state-and-events), [ai-log/etapa-05.md](https://github.com/bogdanalexandru3/PeakPath/blob/main/ai-log/etapa-05.md) | Open DevTools Console and read the documentation. |
 | S5-R8 | Stage 5 commit pushed | [GitHub commit history](https://github.com/bogdanalexandru3/PeakPath/commits/main) | Confirm the Stage 5 commit is published. |
+
+## Stage 6: data from a mock API
+The list is served by json-server from `db.json`. The app fetches it on load
+and shows a loading state and an error state.
+
+```sh
+npm run api # terminal 1, http://localhost:3001
+npm run dev # terminal 2, http://localhost:5173
+```
+
+Jurnalul AI pentru Etapa 6 este în `ai-log/etapa-06.md`.

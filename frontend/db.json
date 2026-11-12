@@ -1,0 +1,39 @@
+{
+  "trasee": [
+    {
+      "id": 1,
+      "titlu": "Creasta Pietrei Craiului",
+      "masiv": "Piatra Craiului",
+      "dificultate": "dificil",
+      "parcurs": true
+    },
+    {
+      "id": 2,
+      "titlu": "Cabana Mălăiești",
+      "masiv": "Bucegi",
+      "dificultate": "ușor",
+      "parcurs": false
+    },
+    {
+      "id": 3,
+      "titlu": "Vârful Moldoveanu",
+      "masiv": "Făgăraș",
+      "dificultate": "mediu",
+      "parcurs": false
+    },
+    {
+      "id": 4,
+      "titlu": "Vârful Omu",
+      "masiv": "Bucegi",
+      "dificultate": "mediu",
+      "parcurs": true
+    },
+    {
+      "id": 5,
+      "titlu": "Canionul 7 Scări",
+      "masiv": "Piatra Mare",
+      "dificultate": "ușor",
+      "parcurs": false
+    }
+  ]
+}

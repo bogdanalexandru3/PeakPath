@@ -1,29 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TraseeList from "./components/TraseeList.jsx";
-
-const TRASEE_INITIALE = [
-  {
-    id: 1,
-    titlu: "Creasta Pietrei Craiului",
-    masiv: "Piatra Craiului",
-    dificultate: "dificil",
-    parcurs: true,
-  },
-  {
-    id: 2,
-    titlu: "Cabana Mălăiești",
-    masiv: "Bucegi",
-    dificultate: "ușor",
-    parcurs: false,
-  },
-  {
-    id: 3,
-    titlu: "Vârful Moldoveanu",
-    masiv: "Făgăraș",
-    dificultate: "mediu",
-    parcurs: false,
-  },
-];
+import { fetchTrasee } from "./api.js";
 
 function temaInitiala() {
   return window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -32,10 +9,34 @@ function temaInitiala() {
 }
 
 export default function App() {
-  const [trasee, setTrasee] = useState(TRASEE_INITIALE);
+  const [trasee, setTrasee] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [tema, setTema] = useState(temaInitiala);
-  const planificate = trasee.filter((traseu) => !traseu.parcurs).length;
 
+  // Rulează o singură dată, după prima randare
+  useEffect(() => {
+    let ignore = false;
+
+    async function load() {
+      try {
+        const data = await fetchTrasee();
+        if (!ignore) setTrasee(data);
+      } catch (err) {
+        if (!ignore) setError(err.message);
+      } finally {
+        if (!ignore) setLoading(false);
+      }
+    }
+
+    load();
+
+    return () => {
+      ignore = true;
+    };
+  }, []);
+
+  // În Etapa 6 modificările rămân locale: se pierd la refresh (rezolvat în Etapa 7)
   function handleToggle(id) {
     setTrasee((prev) =>
       prev.map((traseu) =>
@@ -56,6 +57,8 @@ export default function App() {
     document.documentElement.dataset.theme = nouaTema;
   }
 
+  const planificate = trasee.filter((traseu) => !traseu.parcurs).length;
+
   return (
     <>
       <header className="app-header">
@@ -75,11 +78,19 @@ export default function App() {
       <main className="container">
         <section className="panel trails-list">
           <h2>Traseele mele</h2>
-          <TraseeList
-            trasee={trasee}
-            onToggle={handleToggle}
-            onDelete={handleDelete}
-          />
+          {loading && <p className="info">Se încarcă traseele...</p>}
+          {error && (
+            <p className="error">
+              Nu am putut încărca datele: {error}. Rulează <code>npm run api</code>?
+            </p>
+          )}
+          {!loading && !error && (
+            <TraseeList
+              trasee={trasee}
+              onToggle={handleToggle}
+              onDelete={handleDelete}
+            />
+          )}
         </section>
       </main>
     </>
